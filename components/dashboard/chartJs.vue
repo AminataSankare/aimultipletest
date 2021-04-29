@@ -1,25 +1,22 @@
 
 
 <script>
-import { Bar } from 'vue-chartjs'
+  import { Bar } from 'vue-chartjs'
 
-export default {
-  extends: Bar,
-  props: {data: {
-      type: Object,
-      default: null
+  export default {
+    extends: Bar,
+    props: {data: {
+        type: Object,
+        default: null
+      },
+      options: {
+        type: Object,
+        default: null
+      }
     },
-    options: {
-      type: Object,
-      default: null
-    }
-  },
-  mounted() {
-    this.renderChart(this.data, this.options)
-  },
-
-}
+    // when the component is mounted
+    mounted() {
+      this.renderChart(this.data, this.options)
+    },
+  }
 </script>
-
-<style>
-</style>
