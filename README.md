@@ -65,7 +65,7 @@ Create first page named dashboard.vue in pages/
 Add the followin code
 
 ```code
-    <template>
+<template>
   <div>
     <div>
       <button class="btn btn-primary" @click="sort">Sort</button>
